@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .wrapper{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <title>Playground</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            {% for i in range(0,num) %}
+            <div class="box" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

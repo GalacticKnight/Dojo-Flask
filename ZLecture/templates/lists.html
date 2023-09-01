@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Random Numbers</h1>
+        <p>{{list}}</p>
+        {% if list | length > 10 %}
+            <h3>The list is too long</h3>
+        <!--{% elif list | length > 5 %}
+            <h3>List is too short</h3>-->
+        {% else %}
+            <h3>{{list | length}}</h3>
+        {% endif %}
+        <h1>Students</h1>
+        {% for student in students %}
+            <p>{{student['name']}} - {{student['age']}}</p>
+        {% endfor %}
+    </body>
+</html>

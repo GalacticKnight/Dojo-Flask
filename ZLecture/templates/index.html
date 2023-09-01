@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <h1>We got trouble</h1>
+        <h2>{{phrase}} {{num}}</h2>
+        {% if phrase == "Welcome to the internet" %}<!--This is an if else statement-->
+            <p>Thank you</p>
+        {% endif %}<!--REMEMBER THAT THE ENDING OF THIS DEPENDS ON THE FEATURE YOU ARE USING-->
+
+        {% for i in range(num) %}
+            <p>{{phrase}}</p>
+        {% endfor %}
+
+        {% if phrase == "Welcome to the internet" %}<!--This is an if else statement-->
+            {% for i in range(num) %}
+                <p>{{phrase}}</p>
+            {% endfor %}
+        {% endif %}<!--REMEMBER THAT THE ENDING OF THIS DEPENDS ON THE FEATURE YOU ARE USING-->
+
+        {% if phrase == "SIKE" %}<!--This is an if else statement-->
+            {% for i in range(num) %}
+                <p>{{phrase}}</p>
+            {% endfor %}
+        {% else %}
+            <p>Nope you are wrong</p>
+        {% endif %}<!--THIS IS USED TO END THE FEATURE NOT TO ENCAPSULATE AFTER OPENING ONE-->
+        
+    </body>
+</html>
